@@ -859,6 +859,7 @@ ORDERS_ID_TEMP(订单ID临时表)
 #### 3.3 基本设置
 
 具体路径可自己安装需求改，但是登录的用户需要对备份的目录有读写权限，目录建立方法可参考上面逻辑备份的备份目录建立
+
     RMAN> configure default device type to disk; //设置默认的备份设备为磁盘
     RMAN> configure device type disk parallelism 2; //设置备份的并行级别，通道数
     RMAN> configure channel 1 device type disk format '/home/oracle/oracle_bak/bakup_%U'; //设置备份的文件格式，只适用于磁盘设备
